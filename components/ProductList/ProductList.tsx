@@ -2,8 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-
-
 type ProductsListProps = {
   products: TProduct[]
 }
@@ -19,7 +17,7 @@ const mapProductsToCards = (products: TProduct[]) => {
         <Image className="h-56 w-full object-cover mt-2 transform transition duration-500 hover:scale-105" src={image} layout='responsive' width={200} height={200} alt="Palta" />
         <div className="flex items-center justify-between px-4 py-2 bg-green-700">
           <h1 className="text-gray-200 font-bold text-xl md:text-lg ">${price}</h1>
-          <Link href={`/product/${id}`} >
+          <Link href={`/product/${id}`} passHref>
             <a className="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded hover:bg-green-600"> +More Info</a>
           </Link>
         </div>
