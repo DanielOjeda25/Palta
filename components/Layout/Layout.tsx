@@ -1,3 +1,4 @@
+import Footer from '@components/Footer/Footer'
 import Navbar from '@components/NavBar/Navbar'
 import React  from 'react'
 
@@ -12,6 +13,7 @@ const Layout = ({children}: LayoutProps) => {
       <main>
         {children}
       </main>
+      <Footer />
     </>
   )
 }
