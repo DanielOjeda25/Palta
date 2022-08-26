@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
-import Navbar from '@components/NavBar/Navbar'
 import Header from '@components/Header/Header'
 import ProductList from '@components/ProductList/ProductList'
+import Layout from '@components/Layout/Layout'
 
 
 const Home: NextPage = () => {
@@ -20,9 +20,10 @@ const Home: NextPage = () => {
         <title>Home</title>
       </Head>
 
-      <Navbar />
+     <Layout>
       <Header />
       <ProductList products={products} />
+     </Layout>
     </div>
   )
 }
