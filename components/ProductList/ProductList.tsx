@@ -8,8 +8,8 @@ type ProductsListProps = {
 
 const mapProductsToCards = (products: TProduct[]) => {
   return products.map(({ name, id, price, image, attributes }) => (
-    <div className='' key={id}>
-      <div className="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden my-10 ">
+    <div  key={id}>
+      <div className="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-10 ">
         <div className="px-4 py-2">
           <h1 className="text-gray-900 font-bold text-base md:text-1xl uppercase">{name}</h1>
           <p className="text-gray-600 text-sm mt-1">{attributes.taste}</p>

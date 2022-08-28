@@ -16,9 +16,7 @@ const Shopping = ({ cartCount, name }: ShoppingProps) => {
     }
     if (cartCount > 9) {
       return (
-        <>
-          <span className='absolute top-0 right-0 md:-top-2 md:-right-2 h-4 w-4 bg-red-600 text-white rounded-full flex items-center justify-center text-xs font-bold'>9+</span>
-        </>
+          <span className='absolute top-0 right-0 md:-top-2 md:-right-2 h-4 w-4 bg-red-600 text-white rounded-full flex items-center justify-center text-xs font-bold'>9<sup>+</sup></span>
       )
     }
     return `(${cartCount})`
